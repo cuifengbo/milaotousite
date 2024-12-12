@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      borderWidth: {
+        '1': '1px', 
+        '0.5': '0.5px',  
+      },
     },
   },
   plugins: [],
