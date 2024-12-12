@@ -1,6 +1,6 @@
 "use client"
 
-import Image from "next/image";
+ 
 import {
   UserGroupIcon,
   HomeIcon,
@@ -49,7 +49,7 @@ export default function Topnav() {
             <LinkIcon className="w-6" />
             <p className="hidden md:block">{link.name}</p>
           </Link>
-          
+
         );
       })}
 
