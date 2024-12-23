@@ -25,3 +25,13 @@ body {
     background: linear-gradient(175deg, #27395d 0%, #000 68%);
   }
 }
+
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.masonry-item {
+  /* 让每个项目根据内容自动调整高度 */
+   
+}

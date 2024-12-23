@@ -1,9 +1,10 @@
 "use client"
 
- 
 import {
   UserGroupIcon,
-  HomeIcon,
+  UserIcon,
+  WrenchScrewdriverIcon,
+  SquaresPlusIcon,
   DocumentDuplicateIcon,
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
@@ -11,19 +12,20 @@ import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 
 const links = [
-  { name: '关于', href: '/', icon: HomeIcon },
+  { name: '关于', href: '/', icon: UserIcon },
   {
     name: '项目',
     href: '/project',
-    icon: DocumentDuplicateIcon,
+    icon: WrenchScrewdriverIcon,
   },
-  { name: '博客', href: '/blog', icon: UserGroupIcon },
-  { name: '常用链接', href: '/usefulthings', icon: UserGroupIcon },
+  { name: '博客', href: '/blog', icon: DocumentDuplicateIcon },
+  { name: '常用链接', href: '/usefulthings', icon: SquaresPlusIcon },
   { name: '联系', href: '/contact', icon: UserGroupIcon },
 ];
 
 export default function Topnav() {
   const pathname = usePathname();
+  
   return (
     <div className="
       grid   grid-cols-5 ga
@@ -52,7 +54,7 @@ export default function Topnav() {
 
         );
       })}
-
+      
     </div>
   );
 }
